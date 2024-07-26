@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="navbar-left-item">
         <img src={navicon} alt="navicon" className="navicon" />
-        <h2>Cloud Nest</h2>
+        <h2>Cloud Nesttt</h2>
       </div>
       <div className="navbar-right-item">
         <Link to="/profile" className="nav-link">Profile</Link>
