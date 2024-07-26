@@ -1,6 +1,6 @@
 require("dotenv").config();
 require("colors");
-require("./Config/db.js");
+require("./config/db.js");
 const express = require("express");
 const authRouter = require("./routes/authRoutes.js");
 const otpRouter = require("./routes/otpRoutes.js");
