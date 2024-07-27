@@ -47,7 +47,11 @@ const AppRouter = () => {
     },
     {
       path: "/profile",
-      element: <ProfilePage />,
+      element: isAuthorized ? <ProfilePage /> : <Navigate to="/landing" />,
+    },
+    {
+      path: "*",
+      element: <Navigate to={isAuthorized ? "/" : "/landing"} />,
     },
   ]);
 

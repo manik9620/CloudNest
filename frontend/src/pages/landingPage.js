@@ -1,5 +1,4 @@
 import React from "react";
-import "./landingPage.css";
 import { Link } from "react-router-dom";
 import navicon from "../public/assests/cloud-computing.png";
 import Footer from "../components/footer";
