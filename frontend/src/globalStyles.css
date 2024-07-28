@@ -834,7 +834,6 @@ button:hover {
     height: 5vh;
   }
   .homepage-right-container {
-    border: 2px solid green;
     width: 100%;
     height: 75vh;
     margin: 0;
@@ -859,20 +858,17 @@ button:hover {
   .folders-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 20px;
 
   }
 
   .folder{
-    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden; /* Prevents content overflow */
+    text-overflow: ellipsis; 
   }
 
-  .folders-container p {
-    word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-  overflow: hidden; /* Prevents content overflow */
-  text-overflow: ellipsis; 
-  }
 }
