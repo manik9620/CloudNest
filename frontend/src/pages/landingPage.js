@@ -18,13 +18,13 @@ const LandingPage = () => {
             <h3>CloudNest</h3>
           </div>
           <ul className="nav-links">
-            <li>
+            <li className="objects">
               <a href="#features">Features</a>
             </li>
-            <li>
+            <li className="objects">
               <a href="#about">About</a>
             </li>
-            <li>
+            <li className="objects">
               <a href="#contact">Contact</a>
             </li>
             <li>

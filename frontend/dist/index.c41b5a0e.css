@@ -717,6 +717,104 @@ button:hover {
   font-size: 18px;
 }
 
+@media (width <= 1024px) {
+  .navbar .container {
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    padding: 10px 0;
+  }
+
+  .navbar .nav-links {
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar .nav-links li {
+    margin: 10px;
+  }
+
+  .hero-section {
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 85vh;
+    margin: 90px 10px;
+  }
+
+  .hero-content {
+    margin: 8rem 3.5rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (width <= 768px) {
+  .navbar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbar .container {
+    height: 60px;
+  }
+
+  .hero-section {
+    background-size: cover;
+  }
+
+  .hero-content {
+    margin: 6rem 1.5rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .about-section .container, .cta-section .container, .contact-section .container {
+    padding: 0 10px;
+  }
+
+  .contact-section form {
+    gap: 10px;
+  }
+
+  .contact-section input, .contact-section textarea, .contact-section button {
+    font-size: 16px;
+  }
+}
+
+@media (width <= 480px) {
+  .navbar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbar .container .logo {
+    width: 20px;
+    height: 60px;
+  }
+
+  .objects {
+    display: none;
+  }
+}
+
 :root {
   --toastify-color-light: #fff;
   --toastify-color-dark: #121212;
