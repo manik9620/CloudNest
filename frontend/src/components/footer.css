@@ -75,4 +75,12 @@
       text-align: center;
     }
   }
+
+  @media (max-width: 480px) {
+    .footer {
+      text-align: center;
+      width: 460px;
+      margin: 0;
+    }
+  }
   

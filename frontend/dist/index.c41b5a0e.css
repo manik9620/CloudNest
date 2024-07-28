@@ -171,6 +171,14 @@ footer {
   }
 }
 
+@media (width <= 480px) {
+  .footer {
+    text-align: center;
+    width: 470px;
+    margin: 0;
+  }
+}
+
 .app-container {
   position: relative;
 }
@@ -805,13 +813,71 @@ button:hover {
     padding: 10px;
   }
 
-  .navbar .container .logo {
+  .navbar .container .logo h3 {
     width: 20px;
-    height: 60px;
+    font-size: 22px;
+  }
+
+  .nav-links {
+    align-items: cen;
+    margin-right: 20px;
+  }
+
+  .nav-links li button {
+    font-size: 14px;
   }
 
   .objects {
     display: none;
+  }
+
+  .hero-section {
+    background: url("landingbg.cdd600c5.jpg") 0 0 / cover no-repeat;
+    width: 100vw;
+    height: 60vh;
+    margin: 7rem 0 0;
+    padding: 0 10px;
+  }
+
+  .hero-content {
+    margin: 6rem 1.5rem;
+  }
+
+  .hero-content button {
+    text-align: center;
+    margin: 0 3rem 0 5rem;
+    font-size: 16px;
+  }
+
+  .features-section {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .feature {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .about-section, .cta-section, .contact-section {
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-section .container, .cta-section .container, .contact-section .container {
+    padding: 0 10px;
+  }
+
+  .contact-section form {
+    gap: 10px;
+  }
+
+  .contact-section input, .contact-section textarea, .contact-section button {
+    font-size: 16px;
   }
 }
 

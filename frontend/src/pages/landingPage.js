@@ -10,7 +10,7 @@ const LandingPage = () => {
     }
   return (
     <div>
-      {/* Navbar */}
+      
       <nav className="navbar">
         <div className="container">
           <div className="logo">
@@ -46,7 +46,6 @@ const LandingPage = () => {
         <div className="container">
           <div className="hero-content">
             <a href="#C10">
-              {" "}
               <button className="cta-button">Get Started</button>
             </a>
           </div>
