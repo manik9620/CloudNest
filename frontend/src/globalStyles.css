@@ -770,4 +770,38 @@ button:hover {
   .contact-section button {
     font-size: 16px;
   }
+
+
+  .signup-page-container{
+    width: 80%;
+  }
+
+  .signup-page-container h1{
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .signup-page-container button{
+    background-color: rgb(0, 0, 0)  ;
+    margin-bottom: 10px;
+  }
+
+  .login-page-container{
+    width: 80%;
+  }
+
+  .login-page-container p{
+    font-size: 19px;
+  }
+
+  .login-page-container h1{
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .login-page-container button{
+    background-color: rgb(0, 0, 0)  ;
+    margin-bottom: 10px;
+  }
+
+
 }
+

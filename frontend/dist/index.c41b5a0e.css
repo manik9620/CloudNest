@@ -879,6 +879,38 @@ button:hover {
   .contact-section input, .contact-section textarea, .contact-section button {
     font-size: 16px;
   }
+
+  .signup-page-container {
+    width: 80%;
+  }
+
+  .signup-page-container h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .signup-page-container button {
+    background-color: #000;
+    margin-bottom: 10px;
+  }
+
+  .login-page-container {
+    width: 80%;
+  }
+
+  .login-page-container p {
+    font-size: 19px;
+  }
+
+  .login-page-container h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .login-page-container button {
+    background-color: #000;
+    margin-bottom: 10px;
+  }
 }
 
 :root {
