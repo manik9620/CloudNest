@@ -77,6 +77,7 @@ const generateOtp = async (req, res) => {
         message: `Your Email: ${email} is not correct`,
         data: {},
       });
+      return;
     }
 
     // create a entry in database with that OTP
