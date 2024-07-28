@@ -158,26 +158,46 @@ button:hover {
   height: 70vh;
   width: 15%;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.homepage-left-container input {
-  width: 80%;
-}
-
-.dropdown-container {
+.file-upload-container {
   position: relative;
+  width: 100%;
 }
 
-.dropdown-container button {
+.file-upload-input {
+  display: none; /* Hide the default file input */
+}
+
+.file-upload-label {
   background-color: rgb(123, 92, 255);
   padding: 10px 15px;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  width: 75%;
+  margin: 0 auto;
 }
 
-/* Dropdown menu */
+.homepage-left-container button {
+  background-color: rgb(123, 92, 255);
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 88%;
+  margin: 0 auto;
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -193,7 +213,6 @@ button:hover {
 
 /* Dropdown menu items */
 .dropdown-menu button {
-  /* background: none; */
   border: none;
   padding: 10px;
   text-align: left;
@@ -202,12 +221,10 @@ button:hover {
   font-size: 16px;
 }
 
-/* Hover effect for dropdown menu items */
 .dropdown-menu button:hover {
   background-color: #f0f0f0;
 }
 
-/* Adjust file input styling if needed */
 .dropdown-menu input[type="file"] {
   margin-top: 10px;
 }
@@ -301,14 +318,14 @@ button:hover {
 }
 
 .folder-icon {
-  width: 48px; /* Increase the size of the icon */
+  width: 50px;
   height: 48px;
   margin-bottom: 10px;
 }
 
 .folder p {
   margin: 0;
-  font-size: 16px; /* Adjusted the font size */
+  font-size: 16px;
   color: #333;
 }
 
@@ -712,12 +729,12 @@ button:hover {
   }
 
   .hero-section {
-    background: url(./public/assests/landingbg.jpg) no-repeat ;
+    background: url(./public/assests/landingbg.jpg) no-repeat;
     background-size: cover;
     height: 60vh;
     width: 100vw;
-    margin: 7rem 0 0 0; 
-    padding: 0 10px; 
+    margin: 7rem 0 0 0;
+    padding: 0 10px;
   }
 
   .hero-content {
@@ -743,8 +760,8 @@ button:hover {
     width: 80%;
     margin-bottom: 20px;
   }
-  .about-section ,
-  .cta-section ,
+  .about-section,
+  .cta-section,
   .contact-section {
     text-align: center;
     width: 100%;
@@ -754,10 +771,8 @@ button:hover {
   .cta-section .container,
   .contact-section .container {
     padding: 0 10px;
-    
   }
 
-  
   .contact-section form {
     gap: 10px;
   }
@@ -771,37 +786,93 @@ button:hover {
     font-size: 16px;
   }
 
-
-  .signup-page-container{
+  .signup-page-container {
     width: 80%;
   }
 
-  .signup-page-container h1{
+  .signup-page-container h1 {
     font-weight: 600;
     font-size: 40px;
   }
-  .signup-page-container button{
-    background-color: rgb(0, 0, 0)  ;
+  .signup-page-container button {
+    background-color: rgb(0, 0, 0);
     margin-bottom: 10px;
   }
 
-  .login-page-container{
+  .login-page-container {
     width: 80%;
   }
 
-  .login-page-container p{
+  .login-page-container p {
     font-size: 19px;
   }
 
-  .login-page-container h1{
+  .login-page-container h1 {
     font-weight: 600;
     font-size: 40px;
   }
-  .login-page-container button{
-    background-color: rgb(0, 0, 0)  ;
+  .login-page-container button {
+    background-color: rgb(0, 0, 0);
     margin-bottom: 10px;
   }
 
+  .homepage-main-container {
+    flex-direction: column;
+    margin: 10px 0;
+  }
 
+  .homepage-left-container {
+    height: 5vh;
+    flex-direction: row;
+    padding: 0 0 0 10px;
+    /* border: 2px solid red; */
+    width: 100%;
+    margin: 0;
+  }
+  .homepage-left-container-btn {
+    width: 49vw;
+    height: 5vh;
+  }
+  .homepage-right-container {
+    border: 2px solid green;
+    width: 100%;
+    height: 75vh;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .homepage-file-navigation {
+    display: flex;
+    margin: 10px 0;
+    padding: 0 0 0 10px;
+  }
+  .homepage-file-navigation li {
+    list-style-type: none;
+    border-radius: 18px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .folders-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 20px;
+
+  }
+
+  .folder{
+    overflow: hidden;
+  }
+
+  .folders-container p {
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow: hidden; /* Prevents content overflow */
+  text-overflow: ellipsis; 
+  }
 }
-

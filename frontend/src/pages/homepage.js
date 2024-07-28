@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer"
 import folderIcon from "../public/assests/folder.png";
 import pdfIcon from "../public/assests/file.png";
 import jpgIcon from "../public/assests/jpg-file.png";
@@ -34,7 +35,7 @@ const getFileIcon = (fileName, fileType) => {
   if (fileType === "folder") {
     return fileIcons.folder;
   }
-  const extension = fileName.split('.').pop().toLowerCase();
+  const extension = fileName.split(".").pop().toLowerCase();
   return fileIcons[extension] || fileIcons.default;
 };
 
@@ -131,7 +132,9 @@ const Homepage = () => {
     if (folderToDelete) {
       const success = await deleteFolder(folderToDelete);
       if (success) {
-        const updatedFileFolders = fileFolders.filter(folder => folder._id !== folderToDelete);
+        const updatedFileFolders = fileFolders.filter(
+          (folder) => folder._id !== folderToDelete
+        );
         setFileFolders(updatedFileFolders);
       }
     }
@@ -149,8 +152,18 @@ const Homepage = () => {
       <Navbar />
       <div className="homepage-main-container no-select">
         <div className="homepage-left-container">
-          <button onClick={handleAllowCreateFolder}>New</button>
-          <input type="file" onChange={handleFileUpload} />
+          <button className="homepage-left-container-btn" onClick={handleAllowCreateFolder}>New Folder</button>
+          <div className="file-upload-container">
+            <input
+              type="file"
+              id="file-upload"
+              onChange={handleFileUpload}
+              className="file-upload-input"
+            />
+            <label htmlFor="file-upload" className="file-upload-label">
+              Upload File
+            </label>
+          </div>
         </div>
         <div className="homepage-right-container">
           <ul className="homepage-file-navigation">
@@ -178,11 +191,11 @@ const Homepage = () => {
                     alt={elem.name}
                     className="folder-icon"
                   />
-                  
+
                   <p>{elem.name}</p>
                   {elem.type === "folder" && (
                     <button onClick={() => handleDeleteFolder(elem._id)}>
-                       <RiDeleteBin6Line />
+                      <RiDeleteBin6Line />
                     </button>
                   )}
                 </div>
@@ -218,6 +231,7 @@ const Homepage = () => {
           onCancel={handleCancelDelete}
         />
       )}
+      <Footer/>
     </div>
   );
 };

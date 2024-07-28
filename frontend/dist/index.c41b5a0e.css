@@ -57,6 +57,16 @@ button {
   height: 45px;
 }
 
+@media (width <= 480px) {
+  .navbar-container {
+    width: 100%;
+  }
+
+  .navbar-center-item {
+    display: none;
+  }
+}
+
 .confirm-dialog-backdrop {
   z-index: 1001;
   background-color: #00000080;
@@ -305,24 +315,45 @@ footer {
 }
 
 .homepage-left-container {
+  flex-direction: column;
+  gap: 10px;
   width: 15%;
   height: 70vh;
   padding: 15px;
+  display: flex;
 }
 
-.homepage-left-container input {
-  width: 80%;
-}
-
-.dropdown-container {
+.file-upload-container {
+  width: 100%;
   position: relative;
 }
 
-.dropdown-container button {
+.file-upload-input {
+  display: none;
+}
+
+.file-upload-label {
   color: #fff;
+  text-align: center;
+  cursor: pointer;
   background-color: #7b5cff;
   border: none;
   border-radius: 8px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  display: block;
+}
+
+.homepage-left-container button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #7b5cff;
+  border: none;
+  border-radius: 8px;
+  width: 88%;
+  margin: 0 auto;
   padding: 10px 15px;
   font-size: 16px;
 }
@@ -445,7 +476,7 @@ footer {
 }
 
 .folder-icon {
-  width: 48px;
+  width: 50px;
   height: 48px;
   margin-bottom: 10px;
 }
@@ -910,6 +941,67 @@ button:hover {
   .login-page-container button {
     background-color: #000;
     margin-bottom: 10px;
+  }
+
+  .homepage-main-container {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .homepage-left-container {
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    margin: 0;
+    padding: 0 0 0 10px;
+  }
+
+  .homepage-left-container-btn {
+    width: 49vw;
+    height: 5vh;
+  }
+
+  .homepage-right-container {
+    border: 2px solid green;
+    width: 100%;
+    height: 75vh;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .homepage-file-navigation {
+    margin: 10px 0;
+    padding: 0 0 0 10px;
+    display: flex;
+  }
+
+  .homepage-file-navigation li {
+    border-radius: 18px;
+    align-items: center;
+    padding: 6px;
+    font-size: 20px;
+    font-weight: 300;
+    list-style-type: none;
+    display: flex;
+  }
+
+  .folders-container {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 20px;
+    width: 100%;
+    display: grid;
+  }
+
+  .folder {
+    overflow: hidden;
+  }
+
+  .folders-container p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 
